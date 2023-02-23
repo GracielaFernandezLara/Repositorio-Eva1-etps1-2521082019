@@ -28,7 +28,7 @@ public class IMCActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 double peso = Double.parseDouble(etPeso.getText().toString());
-                double altura = Double.parseDouble(etAltura.getText().toString()) / 100;
+                double altura = Double.parseDouble(etAltura.getText().toString()) ;
                 double imc = peso / (altura * altura);
                 String imcEstado;
                 if (imc < 10.5) {
